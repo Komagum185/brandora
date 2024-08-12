@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter,Poppins, Roboto } from "next/font/google";
 import "./globals.css";
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "300",
+});
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: '300'
+}) 
 
 export const metadata: Metadata = {
   title: "Brandora Design and Media Services",
@@ -15,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
             {children}
       </body>
     </html>

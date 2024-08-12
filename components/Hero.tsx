@@ -2,11 +2,7 @@
 
 import React, { ChangeEvent } from 'react'
 import { Spotlight } from './ui/Spotlight'
-import TextInput from './ui/Textinput'
-import Button from './Button'
 import { TextGenerateEffect } from './ui/TextGenerateUI'
-import { AppleCardsCarouselDemo } from './ui/apple-card-courasel'
-
 
 const Hero = () => {
   function handleEmailChange(e: ChangeEvent<HTMLInputElement>): void {
@@ -17,8 +13,8 @@ const Hero = () => {
     <div className='pb-20 pt-36'>
         <div> 
         <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white' />
-            <Spotlight className='top-10 left-full h-4[80v]' fill='purple' />
-            <Spotlight className='top-28 left-80 h-s[80vh w-50v]' fill='blue' />
+        <Spotlight className='top-10 left-full h-4[80v]' fill='purple' />
+        <Spotlight className='top-28 left-80 h-s[80vh w-50v]' fill='blue' />
         </div>
         <div className="h-screen w-full dark:bg-gray-900 bg-gray-900  dark:bg-grid-white/[0.03] bg-grid-gray/[0.2] flex items-center justify-center relative top-0 left-0">
       <div className="absolute pointer-events-none inset-0 flex items-center 
@@ -30,23 +26,9 @@ const Hero = () => {
           className='text-center text-[40px] md:text-5xl lg:text-6xl'
           words='We use our professional marketing capabilities to help your brand move towards the future.'
           />
-          <div className='justify-between gap-4 flex flex-row' >
-            <div className='items-center justify-center'>
-              <TextInput
-              onChange={handleEmailChange}
-              placeholder='Enter your email-address.'
-              type='email'
-            />
-            </div>
-            <div className='items-center justify-center'>
-              <Button  title='Get started' children={undefined} type='submit'/>
-            </div>
           </div>
-            <p className='capitalize text-white font-thin'>Contact us to get your brand solution now</p>    
         </div>
       </div>
-      <AppleCardsCarouselDemo />
-    </div>
     </div>
   )
 }
