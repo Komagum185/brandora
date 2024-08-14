@@ -61,7 +61,7 @@
   src: url('/public//fonts/Atami\ Stencil\ Regular.TTF') format('TTF');
 }
 body {
-  font-family: 'Agane', 'Atami';
+  font-family: 'Agane', 'Atami',;
 }
 @layer base {
   :root {

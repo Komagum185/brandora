@@ -1,27 +1,18 @@
-"use client";
-import React from "react";
-import { IconClipboard } from "@tabler/icons-react";
-import { cn } from "@/lib/utils";
+// components/Button.tsx
+import React from 'react';
 
-export const ButtonsCard = ({
-  children,
-  className,
-  onClick,
-}: {
-  children?: React.ReactNode;
-  className?: string;
+interface ButtonProps {
+  children: React.ReactNode;
   onClick?: () => void;
-}) => {
+  className?: string;
+}
+
+const Button: React.FC<ButtonProps> = ({ children, onClick, className }) => {
   return (
-    <div
-      onClick={onClick}
-      className={cn(
-        "h-8 w-24 bg-white rounded-xl border border-neutral-100 dark:bg-black dark:border-white/[0.2] hover:border-neutral-200 group/btn overflow-hidden relative flex items-center justify-center",
-        className
-      )}
-    >
-      <div className="absolute inset-0 dark:bg-dot-white/[0.1] bg-dot-black/[0.1]" />
-      <div className="relative z-40">{children}</div>
-    </div>
+    <button onClick={onClick} className={className}>
+      {children}
+    </button>
   );
 };
+
+export default Button;

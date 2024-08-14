@@ -3,8 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Button from './button';
-import { ButtonsCard } from './buttons';
+import Button from './buttons';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,14 +11,17 @@ const Navbar: React.FC = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const handleClick = () => {
+    console.log("button clicked")
+  }
 
   return (
-    <nav className="bg-gray-800 text-white justify-start ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-start">
+    <nav className="bg-slate-900 text-white justify-start w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/"className="text-2xl font-bold">
-            <Image src={'/brandora.svg'}
+            <Image src={'/brandora.png'}
              alt='Brandora Logo' width={250} height={50}/>
             </Link>
           </div>
@@ -40,6 +42,9 @@ const Navbar: React.FC = () => {
                 Pricing
             </Link>
           </div>
+          <div className='flex justify-end items-center md:overflow-hidden '>
+            <Button onClick={handleClick} className='bg-blue-600 items-center font-bold text-center text-xs px-2 rounded-sm py-2 '>Get started</Button>
+        </div>
           <div className="flex md:hidden">
             <button
               onClick={toggleMenu}
@@ -60,8 +65,6 @@ const Navbar: React.FC = () => {
               )}
             </button>
           </div>
-            <ButtonsCard className='bg-blue-600 border-none text-white' />
-        </div>
       </div>
 
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`} id="mobile-menu">
@@ -71,6 +74,7 @@ const Navbar: React.FC = () => {
           <Link href="/service" className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">Services</Link>
           <Link href="/works"className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">Works</Link>
           <Link href="/pricing"className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">Pricing</Link>
+        </div>
         </div>
       </div>
     </nav>

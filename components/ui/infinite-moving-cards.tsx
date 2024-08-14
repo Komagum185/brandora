@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 
-function InfiniteMovingCards({
+export default function InfiniteMovingCards({
   items,
   direction = "left",
   speed = "fast",
@@ -11,15 +11,16 @@ function InfiniteMovingCards({
   className,
 }: {
   items: {
+    imageUrl: string;
     quote: string;
     name: string;
     title: string;
   }[];
-  direction?: "left" | "right";
+  direction?: "right" | "left";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
-}) {
+}){
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
 
@@ -98,7 +99,8 @@ function InfiniteMovingCards({
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
+              >
+              </div>
               <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
                 {item.quote}
               </span>
@@ -119,4 +121,3 @@ function InfiniteMovingCards({
     </div>
   );
 };
-export default InfiniteMovingCards;
