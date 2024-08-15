@@ -15,51 +15,54 @@ export const navItems=[
 
 ]
 
-  export const teamMembers = [
-    {
-        id: 1,
-        name: 'Harris',
-        title: 'CEO & Founder',
-        bio: ', leading teams to success.',
-        imageUrl: '/brandora.jpg',
+export const teamMembers = [
+  {
+    name: 'Bonnie Green',
+    title: 'Senior Front-end Developer',
+    imageUrl: '/path-to-image.jpg',
+    social: {
+      facebook: '#',
+      twitter: '#',
+      linkedin: '#',
+      instagram: '#',
     },
-    {
-        id: 2,
-        name: 'Dean Ahereza',
-        title: 'Chief Technology Officer',
-        bio: 'Jane is an expert in cloud computing and AI, driving innovation at our company.',
-        imageUrl: '/brandora.jpg',
+  },
+  {
+    name: 'Micheal Gough',
+    title: 'Front-end Developer',
+    imageUrl: '/path-to-image.jpg',
+    social: {
+      facebook: '#',
+      twitter: '#',
+      linkedin: '#',
+      instagram: '#',
     },
-    {
-        id: 3,
-        name: 'Ayo Innocent',
-        title: 'Lead Developer',
-        bio: 'Mike specializes in web development, ensuring our products are cutting-edge.',
-        imageUrl: '/brandora.jpg',
+  },
+  {
+    name: 'Helene Engels',
+    title: 'Designer',
+    imageUrl: '/path-to-image.jpg',
+    social: {
+      facebook: '#',
+      twitter: '#',
+      linkedin: '#',
+      instagram: '#',
     },
-    {
-        id: 4,
-        name: 'Edith',
-        title: 'Project Manager',
-        bio: 'Sara manages projects with precision and ensures timely delivery of all milestones.',
-        imageUrl: '/brandora.jpg',
+  },
+  {
+    name: 'Neil Sims',
+    title: 'CEO & React Developer',
+    imageUrl: '/path-to-image.jpg',
+    social: {
+      facebook: '#',
+      twitter: '#',
+      linkedin: '#',
+      instagram: '#',
     },
-    {
-        id: 5,
-        name: 'Dominc Toreto',
-        title: 'UX/UI Designer',
-        bio: 'Emily designs intuitive interfaces that enhance user experience across our platforms.',
-        imageUrl: '/brandora.jpg',
-    },
-    {
-        
-        id: 6,
-        name: 'someone somewhere',
-        title: 'Marketing Director',
-        bio: 'Chris creates strategies that position our brand at the forefront of the industry.',
-        imageUrl: '/brandora.jpg',
-    },
-  ];
+  },
+];
+
+
   export const gridItems=[
     {
         id: 1,
@@ -107,38 +110,6 @@ export const navItems=[
         img: '',
     },
   ]
-export const comapanies = [
-    {
-        id:1,
-        name: '',
-        despcription: '',
-        img: '/'
-    },
-    {
-        id:2,
-        name: '',
-        despcription: '',
-        img: '/'
-    },
-    {
-        id:3,
-        name: '',
-        despcription: '',
-        img: '/'
-    },
-    {
-        id:4,
-        name: '',
-        despcription: '',
-        img: '/'
-    },
-    {
-        id:5,
-        name: '',
-        despcription: '',
-        img: '/'
-    },
-]
 
 export const socialMedia=[
     {
@@ -334,15 +305,15 @@ export const products = [
     },
   ];
 
-  export const companies=[
+  export const items=[
     {
-        imageUrl: "/global-paper.png",
+        img: "/global-paper.png",
         name: 'Glabal Paper',
         quote: '',
         title: '',
     },
     {
-        imageUrl: '/Heey2.png',
+        img: '/Heey2.png',
         name: 'HEEY 2',
         quote: '',
         title: '',
@@ -354,24 +325,33 @@ export const products = [
         title: '',
     },
     {
-        imageUrl: '/global paper.png',
+        img: '/dspace.png',
         name: 'D-SPACE',
         quote: '',
         title: '',
     },
     {
-        imageUrl: '/gps.png',
+        img: '/gps.png',
         name: 'GPS Security Uganda',
         quote: '',
         title: '',
     },
     {
-        imageUrl: '/jinmao.png',
-        name: 'JinMao',
+        img: '/jinmao.png',
+        name: '',
+        quote: '',
+        title: '',
+
     },
     {
-        imageUrl: '/china.png',
-        name: 'chinatown',
+      img: '/lmz.png',
+      name: '',
+      quote: '',
+      title: '',
+  },
+    {
+        img: '/yidao.png',
+        name: '',
         quote: '',
         title: '',
     },

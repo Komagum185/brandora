@@ -1,33 +1,52 @@
 import React from 'react';
 import Image from 'next/image';
 import { teamMembers } from '@/data';
+import {FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
-const Team: React.FC = () => {
+const OurTeam = () => {
   return (
-    <div>
-      <div className="min-h-screen bg-gray-900 text-white p-4">
-        <h1 className="text-4xl font-extrabold text-center mb-8 font-sans">Our Team</h1>
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {teamMembers.map((data) => (
-            <div key={data.name} className=" p-4 text-center">
-              <div className="flex justify-center mb-4">
-                <Image
-                  src={data.imageUrl}
-                  alt={data.name}
-                  width={100}
-                  height={100}
-                  className="rounded-full"
-                />
+    <section className="py-10 bg-gray-100">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-2xl font-bold mb-6">Our Team</h2>
+        <div className="flex justify-center space-x-6">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="text-center">
+              <Image
+                className="w-24 h-24 rounded-full mx-auto mb-4"
+                src={member.imageUrl}
+                alt={member.name}
+              />
+              <h3 className="text-lg font-semibold">{member.name}</h3>
+              <p className="text-gray-500">{member.title}</p>
+              <div className="mt-4 flex justify-center space-x-4 text-gray-500">
+                {member.social.facebook && (
+                  <a href={member.social.facebook} aria-label="Facebook">
+                    <FaFacebook className="w-5 h-5 hover:text-blue-600" />
+                  </a>
+                )}
+                {member.social.twitter && (
+                  <a href={member.social.twitter} aria-label="Twitter">
+                    <FaTwitter className="w-5 h-5 hover:text-blue-400" />
+                  </a>
+                )}
+                {member.social.linkedin && (
+                  <a href={member.social.linkedin} aria-label="LinkedIn">
+                    <FaLinkedin className="w-5 h-5 hover:text-blue-700" />
+                  </a>
+                )}
+                {member.social.instagram && (
+                  <a href={member.social.instagram} aria-label="Instagram">
+                    <FaInstagram className="w-5 h-5 hover:text-pink-500" />
+                  </a>
+                )}
               </div>
-              <h2 className="text-2xl font-semibold mb-2 font-sans">{data.name}</h2>
-              <h3 className="text-xl mb-4 font-sans font-medium">{data.title}</h3>
-              <p>{data.bio}</p>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Team;
+export default OurTeam;
+

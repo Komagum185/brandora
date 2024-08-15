@@ -19,7 +19,7 @@ const Hero = () => {
   ];
   return (
 
-    <div>
+    <section>
        <ImagesSlider className="h-[40rem]" images={images}>
       <motion.div
         initial={{
@@ -37,11 +37,8 @@ const Hero = () => {
       >
         <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
           The hero section slideshow <br /> nobody asked for
+       
         </motion.p>
-        <button className="px-4 py-2 backdrop-blur-sm border bg-blue-600 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-          <span>Get started →</span>
-          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-        </button>
         <div className='relative flex justify-start m-10 px-8 gap-4'>
         <Input />
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg">
@@ -49,7 +46,7 @@ const Hero = () => {
           </button>
         </div>
         <p className="mb-8 font-sans text-sm flex flex-col">
-          <a href="#" className="">
+          <a href="#" className="text-white">
             Contact Us To Get Your Brand Solution Now!
           </a>
         </p>
@@ -59,7 +56,7 @@ const Hero = () => {
     </ImagesSlider>
      
       
-      </div>
+  </section>
 
           
     
