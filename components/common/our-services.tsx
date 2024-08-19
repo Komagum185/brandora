@@ -2,6 +2,7 @@
 import React from 'react'
 import { IconArrowRight } from '@tabler/icons-react'
 import { BentoGridDemo } from '../ui/bento-grid-demo'
+
 const handleClick =()=> {
     console.log("You clicked me!")
 }

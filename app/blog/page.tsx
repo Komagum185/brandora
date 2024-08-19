@@ -1,7 +1,8 @@
+import Image from 'next/image';
 import { client } from '../../sanity';
 import Link from 'next/link';
 
-export default async function BlogPage() {
+export default async function Blog() {
   const query = `*[_type == "post"]{
     _id,
     title,
@@ -23,7 +24,7 @@ export default async function BlogPage() {
               <h2>{post.title}</h2>
             </Link>
             <p>By {post.authorName} on {new Date(post.publishedAt).toLocaleDateString()}</p>
-            {post.mainImage && <img src={post.mainImage} alt={post.title} />}
+            {post.mainImage && <Image src={post.mainImage} alt={post.title} width={70} height={70}/>}
           </div>
         ))}
       </div>

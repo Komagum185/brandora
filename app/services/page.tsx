@@ -1,12 +1,17 @@
 import React from 'react'
 import { ServiceList } from './service-item'
+import Features from '@/components/ui/why-us'
 
-const Services = () => {
+const Service = () => {
   return (
-    <div className='px-20 font-sans max-h-screen'>
+    <main className='w-screen'>
+    <div className='font-sans -mx-4 sm:-mx-6 lg:-mx-8'>
       <ServiceList />
+      <Features />
     </div>
+
+    </main>
   )
 }
 
-export default Services
+export default Service

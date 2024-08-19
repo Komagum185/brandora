@@ -28,7 +28,7 @@ export default function InfiniteMovingCards({
 
   useEffect(() => {
     addAnimation();
-  }, []);
+  }, );
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -76,7 +76,7 @@ export default function InfiniteMovingCards({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 max-w-7xl overflow-hidden",
         className
       )}
     >
@@ -90,24 +90,13 @@ export default function InfiniteMovingCards({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full border border-b-0 flex-shrink-0 px-8 py-6 md:w-[450px]"
-            key={item.name}
-          >
-              <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-                {item.quote}
-              </span>
+            className="w-[350px] max-w-full flex-shrink-0 px-8 py-6 md:w-[450px]"
+            key={item.name}>
               <div className="z-20 flex flex-row items-center justify-center">
-                <span className="flex flex-col gap-1">
+                    <Image src={item.img} alt={"companies"} width={150} height={150} className=""/>
                   <span className="leading-[1.6] text-gray-600 font-normal">
-                    <Image src={item.img} alt={"companies"} width={100} height={100} className="flex justify-items-center"/>
-                
                   </span>
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.title}
-                  </span>
-                </span>
               </div>
-
           </li>
         ))}
       </ul>

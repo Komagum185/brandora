@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { client } from '../../../sanity';
 
 interface PostPageProps {
@@ -6,7 +7,7 @@ interface PostPageProps {
   };
 }
 
-export default async function SinglePostPage({ params }: PostPageProps) {
+export default async function SinglePost({ params }: PostPageProps) {
   const { slug } = params;
 
   const query = `*[_type == "post" && slug.current == $slug][0]{
@@ -27,8 +28,8 @@ export default async function SinglePostPage({ params }: PostPageProps) {
     <div>
       <h1>{post.title}</h1>
       <p>By {post.authorName} on {new Date(post.publishedAt).toLocaleDateString()}</p>
-      {post.mainImage && <img src={post.mainImage} alt={post.title} />}
-      <div>{/* Render the body content here using a rich text component */}</div>
+      {post.mainImage && <Image src={post.mainImage} alt={post.title} height={60} width={60}/>}
+      <div>{}</div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-export interface works {
+export interface Work {
   id: number;
   title: string;
   description: string;
@@ -7,11 +7,11 @@ export interface works {
 }
 
 export const navItems=[
-  {name:"Home", link: '/'},
-  {name:"About", link: '#about'},
-  {name:"Servies", link: '#services'},
-  {name:"Works", link: '#works'},
-  {name:"Pricing", link: '#pricing'},
+  {name:"Brandora", link: '/'},
+  {name:"About", link: '/about'},
+  {name:"Services", link: '/services'},
+  {name:"Works", link: '/works'},
+  {name:"Pricing", link: '/pricing'},
 
 ]
 
@@ -19,7 +19,7 @@ export const teamMembers = [
   {
     name: 'Bonnie Green',
     title: 'Senior Front-end Developer',
-    imageUrl: '/path-to-image.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1492462543947-040389c4a66c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D',
     social: {
       facebook: '#',
       twitter: '#',
@@ -30,7 +30,7 @@ export const teamMembers = [
   {
     name: 'Micheal Gough',
     title: 'Front-end Developer',
-    imageUrl: '/path-to-image.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1542370773-ae6d54f6748d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D',
     social: {
       facebook: '#',
       twitter: '#',
@@ -41,7 +41,7 @@ export const teamMembers = [
   {
     name: 'Helene Engels',
     title: 'Designer',
-    imageUrl: '/path-to-image.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1564809392-cd81eb82320d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8fA%3D%3Dg',
     social: {
       facebook: '#',
       twitter: '#',
@@ -52,7 +52,7 @@ export const teamMembers = [
   {
     name: 'Neil Sims',
     title: 'CEO & React Developer',
-    imageUrl: '/path-to-image.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1509988892867-8bf3ee9e3afa?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8fA%3D%3D',
     social: {
       facebook: '#',
       twitter: '#',
@@ -171,7 +171,7 @@ export const testimonials = [
         title: "Moby-Dick",
     },
   ];
-export const works = [
+export const works: Work[] = [
   {
       id: 1,
       title: 'Project 1',
@@ -191,13 +191,14 @@ export const works = [
       imageUrl: '',
   },
   {
-      title: 'Project 4',
-      description: 'Description 4',
-      imageUrl: '',
+    id: 4,
+    title: 'Project 4',
+    description: 'Description 4',
+    imageUrl: '',
   },
   {
       id: 5,
-      ttitle: 'Project 5',
+      title: 'Project 5',
       description: 'Description 5',
       imageUrl: '',
   },
@@ -307,7 +308,7 @@ export const products = [
 
   export const items=[
     {
-        img: "/global-paper.png",
+        img: "/gp.png",
         name: 'Glabal Paper',
         quote: '',
         title: '',

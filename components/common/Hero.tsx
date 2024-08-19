@@ -1,65 +1,69 @@
 'use client'
 
 import React, { ChangeEvent } from 'react'
-import { Input } from '../ui/input'
-import { motion } from 'framer-motion'
-import { ImagesSlider } from '../ui/features'
-
+import Subscribe from '../ui/subscribe'
 
 const Hero = () => {
-  function handleEmailChange(e: ChangeEvent<HTMLInputElement>): void {
-    throw new Error('Function not implemented.')
-  }
-  const images = [
-    "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tcHV0ZXJzfGVufDB8fDB8fHww",
-    "https://plus.unsplash.com/premium_photo-1679079456083-9f288e224e96?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcHV0ZXJzfGVufDB8fDB8fHww",
-    "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://media.istockphoto.com/id/1828051105/photo/businessman-works-on-laptop-showing-2024-business-trends-dashboard-with-charts-metrics-ai-e.webp?b=1&s=612x612&w=0&k=20&c=7D_dGBLSRtnoJ-Owuvc04FwuKO75yR_5ewA_Vf8jpVs=",
-    "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  ];
+  
   return (
-
-    <section>
-       <ImagesSlider className="h-[40rem]" images={images}>
-      <motion.div
-        initial={{
-          opacity: 2,
-          y: -80,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 0.3,
-        }}
-        className="z-50 flex flex-col justify-center items-center"
-      >
-        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-          The hero section slideshow <br /> nobody asked for
-       
-        </motion.p>
-        <div className='relative flex justify-start m-10 px-8 gap-4'>
-        <Input />
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg">
-            Get started
-          </button>
+    <div className="relative isolate px-6 pt-14 lg:px-8">
+      <Subscribe />
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        >
+          <div
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#f01114] to-[#0202f5] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          />
         </div>
-        <p className="mb-8 font-sans text-sm flex flex-col">
-          <a href="#" className="text-white">
-            Contact Us To Get Your Brand Solution Now!
-          </a>
-        </p>
-        <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-    </div>
-      </motion.div>
-    </ImagesSlider>
-     
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+              We employ the latest trends and technologies to create dynamic and impactful marketing campaigns.{' '}
+              <a href="/services" className="font-semibold text-indigo-600">
+                <span aria-hidden="true" className="absolute inset-0" />
+                Read more <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </div>
+          <div className="text-center">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              The power of your brand
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+            Brandora is a dynamic brand consulting company dedicated to helping businesses establish and enhance their brand presence in the market. 
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="#"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Get started
+              </a>
+              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                Learn more <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>       
+        </div>
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        >
+          <div
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+            className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          />
+        </div>
       
-  </section>
-
-          
-    
+      </div>  
   )
 }
 export default Hero

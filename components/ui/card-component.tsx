@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 interface CardProps {
   imageUrl: string;
@@ -9,17 +9,19 @@ interface CardProps {
 
 const CardComponent: React.FC<CardProps> = ({ imageUrl, title, items }) => {
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 ">
       <Image
         src={imageUrl}
         alt={title}
-        width={400}
-        height={200}
+        width={300}
+        height={100}
         className="object-cover w-full h-48"
       />
-      <div className="p-6">
-        <h2 className="text-2xl font-semibold text-white mt-2">{title}</h2>
-        <ul className="mt-4 list-disc list-inside text-gray-400">
+      <div className="h-48">
+        <h2 className="font-semibold text-white mt-2 text-md text-center leading-8">
+          {title}
+        </h2>
+        <ul className="mt-4 text-gray-400 text-xs list-none py-4 px-4">
           {items.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
