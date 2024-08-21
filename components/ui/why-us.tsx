@@ -38,7 +38,7 @@ export default function Features() {
           We believe in a client-centric approach
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-          Brandora stands out due to it`&lsquo;`'s unique blend of creativity, strategic thinking, 
+          Brandora stands out due to our unique blend of creativity, strategic thinking, 
           and market expertise. Here is why you should choose us:
           </p>
         </div>

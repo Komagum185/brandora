@@ -1,6 +1,6 @@
-    import React from 'react'
+import React from 'react'
 
-    const Cards = () => {
+export const Cards = () => {
     return (
     <div className='mx-auto flex justify-between items-center gap-8 py-16 m-8'>
     <div className="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
@@ -35,5 +35,3 @@
     </div>
     )
     }
-
-    export default Cards

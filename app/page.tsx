@@ -2,6 +2,7 @@ import Hero from '@/components/common/Hero';
 import LeadingTheIndustrySection from '@/components/ui/leading-industry';
 import TrustedBy from '@/components/common/trusted';
 import Testimonial from '@/components/common/testimonial';
+import { ServiceCard } from '@/components/ui/focus-card-demo';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
        <Hero/>
         <TrustedBy />
         <LeadingTheIndustrySection />
+        <ServiceCard />
         <Testimonial />
       </div>
     </main>

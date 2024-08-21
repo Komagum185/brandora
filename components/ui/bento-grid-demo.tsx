@@ -37,19 +37,19 @@ const Skeleton = () => {
 }
 const items = [
   {
-    title: "Brand Strategy",
-    description: "With help you precisely position your brand, design its image, and develop brand communication.",
+    title: "HEEY 2",
+    description: "Brand Advancement Plan",
     header: <Skeleton />,
   
   },
   {
-    title: "Marketing Plan",
-    description: "We create marketing strategies and campaigns to boost your brand awareness and sales.",
+    title: "BajSan",
+    description: "Natural drinking water",
     header: <Skeleton />,
   },
   {
-    title: "Advertising Design",
-    description: "We offer creative ad design and placement strategies to increase your brand’s exposure and appeal.",
+    title: "Kunming Jinmao",
+    description: "Mansion Future Living Blueprint",
     header: <Skeleton />,
   },
 ];

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { BentoGridDemo } from "../ui/bento-grid-demo";
-import { IconArrowDown, IconArrowRight, IconArrowUp } from "@tabler/icons-react";
+import { IconArrowDown, IconArrowRight, IconArrowUp, IconMinus, IconPlus } from "@tabler/icons-react";
 import { faqData } from "@/data";
 import { useState } from "react";
 
@@ -50,7 +50,7 @@ export default function Testimonial() {
             <figcaption className="mt-10">
               <Image
                 alt=""
-                src={"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"}
+                src={""}
                 className="mx-auto h-10 w-10 rounded-full"
                 width={100}
                 height={100}
@@ -60,7 +60,7 @@ export default function Testimonial() {
                 <svg width={3} height={3} viewBox="0 0 2 2" aria-hidden="true" className="fill-gray-900">
                   <circle r={1} cx={1} cy={1} />
                 </svg>
-                <div className="text-gray-600">CEO of Yidao</div>
+                <div className="text-gray-600">CEO of Brandora</div>
               </div>
             </figcaption>
           </figure>
@@ -74,7 +74,7 @@ export default function Testimonial() {
               onClick={() => toggleFAQ(index)}
             >
               {item.question}
-              <span className="text-gray-500">{activeIndex === index ? <IconArrowDown color={'black'} /> : <IconArrowUp color={'black'} />}</span>
+              <span className="text-gray-500">{activeIndex === index ? <IconMinus color={'black'} /> : <IconPlus color={'black'} />}</span>
             </button>
             {activeIndex === index && (
               <div className="mt-2 text-gray-700">

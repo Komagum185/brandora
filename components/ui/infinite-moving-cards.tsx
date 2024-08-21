@@ -93,7 +93,7 @@ export default function InfiniteMovingCards({
             className="w-[350px] max-w-full flex-shrink-0 px-8 py-6 md:w-[450px]"
             key={item.name}>
               <div className="z-20 flex flex-row items-center justify-center">
-                    <Image src={item.img} alt={"companies"} width={150} height={150} className=""/>
+                    <Image src={item.img} alt={"companies"} width={100} height={100} />
                   <span className="leading-[1.6] text-gray-600 font-normal">
                   </span>
               </div>

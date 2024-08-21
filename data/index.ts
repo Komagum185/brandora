@@ -362,15 +362,15 @@ export const products = [
 export const faqData = [
     {
       question: 'What is Brandora?',
-      answer: 'Brandora is a tech company focused on providing innovative solutions to modern-day problems.',
+      answer: 'Brandora Design & Media Services Co Ltd targets the following customer segments Emerging Brands and Startups: We specialize in helping emerging brands and startups establish and solidify their brand identity. Through innovative strategies and designs, we attract the attention of target markets.Small and Medium Enterprises (SMEs): We provide comprehensive brand-building services tailored to small and medium enterprises. Our goal is to help them stand out in competitive markets, expand market share, and enhance brand value. Multinational Companies and Large Enterprise Branches: We collaborate with multinational companies and their branches in East Africa, offering localized brand strategies and advertising design services that cater to local market needs and cultural contexts. Industry-Specific Clients: We focus on specific industries such as consumer goods, technology, real estate, and financial services, delivering customized brand consultancy and advertising solutions tailored to their unique requirements. Clients Seeking Brand Innovation and Market Share Growth: Our clients typically seek to achieve business growth and increase market share through innovative brand strategies and precise market promotion. Brandora Design & Media Services Co Ltd is committed to providing ongoing support and innovative solutions tailored to the diverse needs of different client segments. Our professional team ensures that each client receives personalized service aimed at achieving success in competitive markets.',
     },
     {
-      question: 'How can I contact customer support?',
-      answer: 'You can reach out to our customer support team via email at support@brandor.com.',
+      question: 'What problems does Brandora seek to solve?',
+      answer: 'Brandora Design & Media Services Co Ltd addresses a variety of issues for clients in brand building and advertising design, including but not limited to: Brand Identification and Positioning: We help clients clearly define the uniqueness of their brand and its market positioning, ensuring it accurately communicates core values to target audiences. 2.Lack of Market Competitiveness: Through thorough market analysis and competitor research, we develop effective brand strategies and marketing plans to enhance clients competitiveness in fierce markets. Inconsistent Brand Image: We design and implement unified brand visuals and communication strategies to maintain consistency and professionalism across various media and channels. Market Share and Business Growth: Using innovative advertising design and precise market promotion, we assist clients in expanding market share and achieving business growth. Cross-cultural and Regional Adaptation: For multinational companies and their branches in East Africa, we provide localized brand strategies and advertising design services to help clients adapt to local market cultures and consumer preferences. Through professional brand consultancy and creative design, Brandora Design & Media Services Co Ltd is committed to solving various challenges clients face in brand building and market promotion, bringing them sustained business success and enhanced brand value.',
     },
     {
-      question: 'What services do you offer?',
-      answer: 'We offer a wide range of services including web development, mobile app development, and cloud solutions.',
+      question: 'Who are our competitors?',
+      answer: '•  Other creative design and advertising agencies: Similar firms focusing on brand building, advertising design, and media services, competing based on creative uniqueness and execution capabilities. Specialized brand consulting firms: These companies offer professional brand strategy and market analysis services, competing based on strategic insights and analytical capabilities. Digital marketing and social media agencies: Companies specializing in digital marketing, social media management and online advertising, competing based on digital expertise and effectiveness in online promotions. Large advertising agencies and multinational advertising groups: Global advertising firms and multinational advertising groups often have greater resources and global networks, competing based on coverage and global service capabilities. Regional competitors: In the East African region, there have local creative design and advertising agencies, competing based on local market understanding and utilization of local resources.',
     },
     // Add more FAQ items as needed
   ];
@@ -478,6 +478,21 @@ export const servicesData: Section[] = [
       },
 
     ],
+  },
+  
+];
+export const serviceCards = [
+  {
+    title: "Brand Identification and Positioning",
+    desc: "Brand positioning and analysis along with brand architecture design and we also do brand management and maintenence",
+  },
+  {
+    title: "Marketing Planning",
+    desc: "We do market segmentation and Target Market Selection",
+  },
+  {
+    title: "Advertising Design and Placement",
+    desc: "We do creative design and ad production along with ad placement and monitoring",
   },
   
 ];
